@@ -33,8 +33,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid tomato;
 }
 .section {
   padding-top: 94px;
@@ -53,6 +51,7 @@ body {
 .work-list {
   display: flex;
   column-gap: 30px;
+  max-width: 370px;
 }
 .section-title {
   margin-top: 0;
@@ -69,6 +68,7 @@ body {
 .team-list {
   display: flex;
   column-gap: 30px;
+  max-width: 270px;
 }
 .title {
   margin-top: 0;
@@ -115,7 +115,7 @@ body {
 }
 
 .button {
-  border: 1px solid transparent;
+  border: transparent;
   cursor: pointer;
   border-radius: 4px;
   font-family: inherit;
@@ -139,8 +139,6 @@ body {
 
 /* Heder Шапка for page Studio & Portfolio */
 .page-header {
-  /*padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .page-header .container {
@@ -289,6 +287,12 @@ margin-left: 50px;
 
 /*Page Portfolio, Main page */
 
+.filter {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -314,9 +318,20 @@ margin-left: 50px;
 }
 
 /* Карточки Cards */
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cards-foto {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  max-width: 370px;
+}
 .cards-title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
